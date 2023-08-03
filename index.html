@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> OLX </title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="contain sticky-top bg-light">
+    <div class="container">
+      <div class="row ouper">
+        <div class="col d-flex">
+          <img src="https://www.olx.com.pk/assets/brandIconLogin_noinline.93e8a1a9cf50902ba5250814f57810ff.svg" alt="" 
+          style="width: 50px;">
+          <i class="fa-solid fa-car"></i><p>MOTOR</p>
+          <i class="fa-solid fa-file"></i><P>PROPERTY</P>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top p-4">
+    <a class="navbar-brand" href="#"><img src="https://logos-world.net/wp-content/uploads/2022/04/OLX-Logo.png" alt=""
+        width="80px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" id="list">
+        <li class="second" style="list-style: none;">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <select name="select" id="select">
+            <option value="Pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="China">China</option>
+            <option value="America">America</option>
+            <option value="Iran">Iran</option>
+          </select>
+        </li>
+        <li class="third" style="list-style: none;">
+          <input type="text" id="input" placeholder="Finds cars Mobile Phone and More..."><button><i
+              class="fa-solid fa-magnifying-glass"></i></button>
+        </li>
+        <li class="fourth" style="list-style: none;" id="img-img">
+          <a href="./login.html">
+            <button type="button" class="btn bg-dark text-light" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">login</button></a>
+        </li>
+        <div id="hello">
+          <li class="five" style="list-style: none;" id="page-page">
+            <button  id="card-page"><i class="fa-sharp fa-solid fa-plus"></i>
+              <a href="" id="href" style="text-decoration: none;
+            color: black; font-weight: bold;">SELL</a></button>
+            </li>
+          </div>
+      </ul>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+
+  <!-- img-start -->
+<div class="container">
+  <div class="row img-two mt-5">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <img src="https://images.olx.com.pk/thumbnails/363962755-800x600.webp" alt="" id="change-img"
+        onclick="window.location.reload()">
+      </div>
+    </div>
+  </div>
+  <!-- img-end -->
+
+  <!-- <div class="border-card"></div> -->
+  <div class="container-fluid">
+    <div class="row" id="card-add-img">
+
+    </div>
+  </div>
+
+
+
+  `<!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit Card</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="input-group mb-3">
+            <input type="file" id="image1" class="form-control" placeholder="Choose File" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" id="title1" class="form-control" placeholder="Title" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" id="desc1" class="form-control" placeholder="Description" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" id="price1" class="form-control" placeholder="Price" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="btn-change">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- footer start -->
+      <div class="container-fluid bg-light">
+        <div class="container">
+          <div class="row footer">
+            <div class="col-lg-3  col-md-3 col-sm-6 mt-4 text-center">
+              <h2>POPULAR</h2>
+              <p>Cars</p>
+              <p>Flats for rent</p>
+              <p>Mobile Phone</p>
+              <p>Jobs</p>
+            </div>
+            <div class="col-lg-3 mt-4 col-md-3 col-sm-6 text-center">
+              <h2>TRENDING </h2>
+              <p>Bikes</p>
+              <p>Watch</p>
+              <p>Books</p>
+              <p>Dogs</p>
+            </div>
+            <div class="col-lg-3 mt-4 col-md-3 col-sm-6 text-center">
+              <h2>ABOUT US</h2>
+              <p>About Dubizzle</p>
+              <p> Contact us</p>
+              <p>OLX Blog</p>
+              <p> OLX for Buisnes</p>
+            </div>
+            <div class="col-lg-3 mt-4 col-md-3 col-sm-6 text-center">
+              <h2>FOLLOW US</h2>
+              <span class="span-one fs-4 mt-5"><a href="https://github.com/junaidsalam639"><i class="fa-brands fa-facebook p-2"></i></a><i class="fa-brands fa-instagram p-2"></i><i class="fa-brands fa-twitter p-2"></i><i class="fa-solid fa-circle-play p-2"></i></span>
+              <span class="span-two d-flex mt-4 text-center mb-5 m-5"><img src="https://www.olx.com.pk/assets/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg" alt=""><img src="https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg" alt=""></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer end -->
+    
+      <div class="end">
+        <div class="black">
+            <h3>Free Classifieds in Pakistan . © 2006-2023 OLX</h3>
+        </div>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script type="module" src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="sweetalert2.all.min.js"></script>
+</body>
+</html>
